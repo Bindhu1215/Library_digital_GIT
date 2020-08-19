@@ -35,7 +35,7 @@ namespace WebApplication2.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddOrEdit([Bind("EmployeeId,FullName,EmpCode,Position,OfficeLocation")] Employee employee)
+        public async Task<IActionResult> AddOrEdit([Bind("EmployeeId,UserId , FullName ,Password , Date_of_birth , EmailID  , Registration_Date ,Address , Role ")] Employee employee)
         {
             if (ModelState.IsValid)
             {
